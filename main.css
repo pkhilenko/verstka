@@ -43,16 +43,11 @@ section {
 
 aside {
   width: 200px;
-  display: flex;
-  flex-direction: column;
-  margin-left: 8px;
-}
-
-.aside-content {
-  flex-basis: 400px;
+  align-self: start;
   background-color: green;
   position: sticky;
   top: 50px;
+  margin-left: 8px;
 }
 
 footer {
