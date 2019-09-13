@@ -5,6 +5,33 @@ body {
   background-color: darkgray;
 }
 
+a {
+  text-decoration: none;
+  color: darkgray;
+  font-size: 16px;
+  transition: all 0.2s ease;
+}
+
+a.active {
+  color: black;
+}
+
+a.disabled {
+  color: lightgray;
+}
+
+a:hover {
+  color: black;
+  opacity: 0.9;
+  transition: all 0.2s ease;
+}
+
+a.phone-style:hover {
+  color: black;
+  opacity: 0.9;
+  transition: all 0.2s ease;
+}
+
 .container {
   max-width: 1000px;
   min-height: calc(100vh - 50px);
@@ -42,6 +69,20 @@ nav {
   }
 }
 
+.nav-header {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 100%;
+}
+
+@media (max-width: 767px) {
+  .nav-header {
+    display: none;
+  }
+}
+
 .mobiles-nav {
   display: none;
 }
@@ -64,7 +105,6 @@ main {
 
 @media (max-width: 767px) {
   main {
-    display: flex;
     flex-direction: column;
     padding: 0;
   }
@@ -76,21 +116,60 @@ section {
 }
 
 aside {
-  width: 200px;
+  flex-basis: 200px;
   align-self: start;
   margin-left: 8px;
+  background-color: green;
+  position: sticky;
+  top: 50px;
 }
 
 @media (max-width: 767px) {
   aside {
-    display: flex;
     width: 100%;
     margin: 5px 0 0 0;
   }
 }
 
 footer {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   background-color: aqua;
   flex-basis: 150px;
   margin-top: 15px;
+}
+
+@media (max-width: 767px) {
+  footer {
+    justify-content: start;
+  }
+}
+
+footer a.email-style {
+  align-self: center;
+}
+
+@media (max-width: 767px) {
+  footer a.email-style {
+    align-self: flex-start;
+  }
+}
+
+footer a {
+  padding: 10px;
+}
+
+footer a.phone-style {
+  color: #137fb1c7;
+  transition: all 0.2s ease;
+  align-self: flex-end;
+}
+
+@media (max-width: 767px) {
+  footer a.phone-style {
+    align-self: flex-start;
+  }
 }

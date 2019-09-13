@@ -10,28 +10,47 @@
 <body>
   <div class="container">
     <header>
-      <h1>Header</h1>
+      <div class="nav-header">
+        <a class="nav-heade-link active" href="#">Active</a>
+        <a class="nav-heade-link" href="#">Link</a>
+        <a class="nav-heade-link" href="#">Link</a>
+        <a class="nav-heade-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+      </div>
     </header>
 
     <main>
       <nav><ul><li>Навигация</li></ul></nav>
+
       <div class="mobiles-nav">Mobiles NAV</div>
+
       <section><h1>Content</h1>
           <br> <br><br> <br><br> <br><br> <br><br> <br><br> <br><br> <br><br> <br> <br> <br><br> <br><br> <br><br> <br><br>
-          <br><br> <br><br> <br><br> <br> <br> <br><br> <br><br> <br><br> <br><br> <br><br> <br><br> <br><br> <br> <br> <br><br>
-          <br><br> <br><br> <br><br> <br><br> <br><br> <br><br> <br> <br> <br><br> <br><br> <br><br> <br><br> <br><br> <br><br> <br><br> <br> <br> <br><br> <br><br> <br><br> <br><br> <br><br> <br><br> <br><br> <br>  <br> <br><br> <br><br> <br><br> <br><br> <br><br> <br><br> <br><br> <br> <br> <br><br> <br><br> <br><br> <br><br> <br><br> <br><br> <br><br> <br>
+            <br><br> <br> <br> <br><br> <br><br> <br><br> <br><br> <br><br> <br><br> <br><br> <br>  <br> <br><br> <br><br> <br><br> <br><br> <br><br> <br><br> <br><br> <br> <br> <br><br> <br><br> <br><br> <br><br> <br><br> <br><br> <br><br> <br>
       </section>
       <aside>
          <h1>Информация</h1>
         <p>какойто текст</p>
-          <br> <br><br> <br><br> <br><br> <br><br> <br><br> <br><br> <br><br> <br> <br> <br><br> <br><br> <br><br> <br><br>
+           <br><br> <br><br> <br><br> <br><br> <br> <br> <br><br> <br><br> <br><br> <br><br>
           <br>
       </aside>
     </main>
 
     <footer>
-      <h1>Footer</h1>
+      <a class="phone-style" href="tel:+380985554433">+380985554433 Позвоните нам!</a>
+      <a class="email-style" href="javascript:SendMail('petr.khilenko', 'ya.ru')">Задавайте вопросы по электронной почте</a>
+      <div class="counter">
+        <!--LiveInternet logo--><a href="//www.liveinternet.ru/click" target="_blank"><img src="//counter.yadro.ru/logo?14.6"
+            title="LiveInternet: показано число просмотров за 24 часа, посетителей за 24 часа и за сегодня" alt="" border="0"
+            width="88" height="31" /></a>
+        <!--/LiveInternet-->
+      </div>
     </footer>
   </div>
+
+  <script>
+    function SendMail(Login, Server) {
+      window.location.href = ("mailto:" + Login + "@" + Server);
+    }
+  </script>
 </body>
 </html>
