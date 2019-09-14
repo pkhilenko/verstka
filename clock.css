@@ -1,0 +1,104 @@
+.clock {
+  width: 50vw;
+  height: 50vw;
+  border: 5px solid black;
+  border-radius: 50%;
+  position: relative;
+  font-size: 8vw;
+}
+
+.hour1 {
+  position: absolute;
+  width: 8vw;
+  height: 6vw;
+  top: 3vw;
+  right: 8vw;
+}
+
+.hour2 {
+  position: absolute;
+  width: 8vw;
+  height: 6vw;
+  top: 11vw;
+  right: 0;
+}
+
+.hour3 {
+  position: absolute;
+  width: 8vw;
+  height: 6vw;
+  top: 21vw;
+  right: -3vw;
+}
+
+.hour4 {
+  position: absolute;
+  width: 8vw;
+  height: 6vw;
+  bottom: 13vw;
+  right: 0vw;
+}
+
+.hour5 {
+  position: absolute;
+  width: 8vw;
+  height: 6vw;
+  bottom: 4.5vw;
+  right: 8vw;
+}
+
+.hour6 {
+  position: absolute;
+  width: 8vw;
+  height: 6vw;
+  bottom: 2vw;
+  left: 23vw;
+}
+
+.hour7 {
+  position: absolute;
+  width: 8vw;
+  height: 6vw;
+  bottom: 4.5vw;
+  left: 12vw;
+}
+
+.hour9 {
+  position: absolute;
+  width: 8vw;
+  height: 6vw;
+  top: 21vw;
+  left: 1vw;
+}
+
+.hour8 {
+  position: absolute;
+  width: 8vw;
+  height: 6vw;
+  bottom: 12vw;
+  left: 4vw;
+}
+
+.hour10 {
+  position: absolute;
+  width: 8vw;
+  height: 6vw;
+  top: 11vw;
+  left: 3vw;
+}
+
+.hour11 {
+  position: absolute;
+  width: 8vw;
+  height: 6vw;
+  top: 3vw;
+  left: 10.5vw;
+}
+
+.hour12 {
+  position: absolute;
+  width: 8vw;
+  height: 6vw;
+  top: -0.5vw;
+  left: 21.5vw;
+}
