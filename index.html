@@ -7,51 +7,46 @@
   <title>Document</title>
   <link rel="stylesheet" href="main.css">
 </head>
+
 <body>
   <div class="container">
     <header>
-
-        <ul class="mb-3 nav-header">
-          <li class="nav-item">
-            <a class="nav-link active" href="#pills-home" selected="true">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#pills-profile" selected="false">Profile</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#pills-contact" selected="false">Contact</a>
-          </li>
-        </ul>
-
+      <ul class="nav-header">
+        <li><a class="nav-link active" href="#pills-home" selected="true">Home</a></li>
+        <li><a class="nav-link" href="#pills-profile" selected="false">Profile</a></li>
+        <li><a class="nav-link" href="#pills-contact" selected="false">Contact</a></li>
+      </ul>
     </header>
 
     <main>
       <nav><ul><li>Навигация</li></ul></nav>
 
-      <div class="mobiles-nav">
-        <div class="flex-column">
-          <a class="nav-link active" href="#v-pills-home" selected="true">Home</a>
-          <a class="nav-link" href="#v-pills-profile" selected="false">Profile</a>
-          <a class="nav-link" href="#v-pills-messages" selected="false">Messages</a>
-          <a class="nav-link" href="#v-pills-settings" selected="false">Settings</a>
-        </div>
-      </div>
+      <ul class="mobiles-nav">
+        <li><a class="nav-link active" href="#v-pills-home" selected="true">Home</a></li>
+        <li><a class="nav-link" href="#v-pills-profile" selected="false">Profile</a></li>
+        <li><a class="nav-link" href="#v-pills-messages" selected="false">Messages</a></li>
+        <li><a class="nav-link" href="#v-pills-settings" selected="false">Settings</a></li>
+      </ul>
+
 
       <section><h1>Content</h1>
-          <br> <br><br> <br><br> <br><br> <br><br> <br><br> <br><br> <br><br> <br> <br> <br><br> <br><br> <br><br> <br><br>
-            <br><br> <br> <br> <br><br> <br><br> <br><br> <br><br> <br><br> <br><br> <br><br> <br>  <br> <br><br> <br><br> <br><br> <br><br> <br><br> <br><br> <br><br> <br> <br> <br><br> <br><br> <br><br> <br><br> <br><br> <br><br> <br><br> <br>
+        <br><br><br><br><br><br><br><br><br><br><br> <br><br> <br><br> <br><br> <br><br> <br><br> <br><br> <br><br>
+        <br><br><br> <br> <br><br> <br><br> <br><br> <br><br> <br><br> <br><br> <br><br> <br><br> <br><br> <br><br>
+        <br><br> <br><br> <br><br> <br><br> <br><br> <br><br> <br><br> <br><br> <br><br> <br><br> <br><br> <br><br>
       </section>
+
+
       <aside>
          <h1>Информация</h1>
         <p>какойто текст</p>
-           <br><br> <br><br> <br><br> <br><br> <br> <br> <br><br> <br><br> <br><br> <br><br>
-          <br>
+          <br><br> <br><br> <br><br> <br><br> <br> <br> <br><br> <br><br> <br><br> <br><br>
       </aside>
     </main>
 
     <footer>
       <a class="phone-style" href="tel:+380985554433">+380985554433 Позвоните нам!</a>
       <a class="email-style" href="javascript:SendMail('petr.khilenko', 'ya.ru')">Задавайте вопросы по электронной почте</a>
+
       <div class="counter">
         <!--LiveInternet logo--><a href="//www.liveinternet.ru/click" target="_blank"><img src="http://counter.yadro.ru/logo?14.6"
             title="LiveInternet: показано число просмотров за 24 часа, посетителей за 24 часа и за сегодня" alt="" border="0"
@@ -61,10 +56,6 @@
     </footer>
   </div>
 
-  <script>
-    function SendMail(Login, Server) {
-      window.location.href = ("mailto:" + Login + "@" + Server);
-    }
-  </script>
+  <script src="./send_mail.js"></script>
 </body>
 </html>

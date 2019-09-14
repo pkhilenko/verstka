@@ -8,6 +8,7 @@ body {
 ul {
   list-style-type: none;
   margin: 0;
+  padding: 0;
 }
 
 a {
@@ -15,7 +16,7 @@ a {
   color: #007BFF;
   font-size: 16px;
   transition: all 0.2s ease;
-  padding: 10px 12px 0 12px;
+  padding: 0 12px;
 }
 
 a.active {
@@ -38,18 +39,14 @@ a.phone-style:hover {
   transition: all 0.2s ease;
 }
 
-li.nav-item {
-  display: flex;
-  align-items: center;
-  align-content: center;
-}
-
 .nav-link {
   border-radius: .25rem;
-  display: block;
+  display: flex;
   height: 40px;
   box-sizing: border-box;
   margin: 0 12px 0 12px;
+  align-items: center;
+  align-content: center;
 }
 
 a.nav-link.active {
@@ -58,7 +55,8 @@ a.nav-link.active {
 }
 
 .container {
-  max-width: 1000px;
+  box-sizing: border-box;
+  max-width: 1200px;
   min-height: calc(100vh - 50px);
   background-color: white;
   border: 1px solid lightgreen;
@@ -87,7 +85,7 @@ header {
 }
 
 nav {
-  background-color: white;
+  box-sizing: border-box;
   border: 1px solid lightgreen;
   width: 200px;
   margin-right: 8px;
@@ -104,7 +102,6 @@ nav {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  align-content: center;
   height: 100%;
 }
 
@@ -120,21 +117,21 @@ nav {
 
 @media (max-width: 767px) {
   .mobiles-nav {
-    display: block;
-    background-color: white;
-    border: 1px solid lightgreen;
-    width: 100%;
-    margin: 0 0 5px 0;
-    flex-basis: 150px;
-  }
-  .flex-column {
     display: flex;
     flex-direction: column;
+    box-sizing: border-box;
+    border: 1px solid lightgreen;
+    width: 100%;
+    padding: 0;
+    flex-basis: 150px;
+  }
+  .mobiles-nav .nav-link {
     width: 200px;
   }
 }
 
 main {
+  box-sizing: border-box;
   display: flex;
   padding: 0 10px;
   flex-grow: 1;
@@ -148,16 +145,16 @@ main {
 }
 
 section {
-  background-color: white;
+  box-sizing: border-box;
   border: 1px solid lightgreen;
   flex-grow: 1;
 }
 
 aside {
+  box-sizing: border-box;
   flex-basis: 200px;
   align-self: start;
   margin-left: 8px;
-  background-color: white;
   border: 1px solid lightgreen;
   position: sticky;
   top: 50px;
@@ -171,11 +168,11 @@ aside {
 }
 
 footer {
+  box-sizing: border-box;
   padding: 10px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: white;
   border: 1px solid lightgreen;
   flex-basis: 150px;
   margin-top: 15px;
