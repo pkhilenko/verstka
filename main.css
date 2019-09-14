@@ -216,3 +216,143 @@ footer a.phone-style {
     padding: 10px 10px 10px 0;
   }
 }
+
+.clock {
+  width: 50vw;
+  height: 50vw;
+  border: 5px solid black;
+  border-radius: 50%;
+  position: relative;
+}
+
+.hour1 {
+  position: absolute;
+  width: 8vw;
+  height: 6vw;
+  top: 3vw;
+  right: 8vw;
+  background-image: url('./image/one.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.hour2 {
+  position: absolute;
+  width: 8vw;
+  height: 6vw;
+  top: 11vw;
+  right: 1vw;
+  background-image: url('./image/two.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.hour3 {
+  position: absolute;
+  width: 8vw;
+  height: 6vw;
+  top: 21vw;
+  right: -1vw;
+  background-image: url('./image/three.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.hour4 {
+  position: absolute;
+  width: 8vw;
+  height: 6vw;
+  bottom: 13vw;
+  right: 2vw;
+  background-image: url('./image/four.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.hour5 {
+  position: absolute;
+  width: 8vw;
+  height: 6vw;
+  bottom: 4vw;
+  right: 9vw;
+  background-image: url('./image/five.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.hour6 {
+  position: absolute;
+  width: 8vw;
+  height: 6vw;
+  bottom: 0;
+  left: 21vw;
+  background-image: url('./image/six.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.hour7 {
+  position: absolute;
+  width: 8vw;
+  height: 6vw;
+  bottom: 3.5vw;
+  left: 10vw;
+  background-image: url('./image/seven.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.hour9 {
+  position: absolute;
+  width: 8vw;
+  height: 6vw;
+  top: 21vw;
+  left: -1vw;
+  background-image: url('./image/nine.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.hour8 {
+  position: absolute;
+  width: 8vw;
+  height: 6vw;
+  bottom: 12vw;
+  left: 2vw;
+  background-image: url('./image/eight.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.hour10 {
+  position: absolute;
+  width: 8vw;
+  height: 6vw;
+  top: 11vw;
+  left: 3vw;
+  background-image: url('./image/ten.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.hour11 {
+  position: absolute;
+  width: 8vw;
+  height: 6vw;
+  top: 3vw;
+  left: 10.5vw;
+  background-image: url('./image/eleven.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.hour12 {
+  position: absolute;
+  width: 8vw;
+  height: 6vw;
+  top: -0.5vw;
+  left: 21.5vw;
+  background-image: url('./image/twelf.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
